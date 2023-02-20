@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #fff;
+			color: #000;
+        }
+        
+        header {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid white;
+        }
+        
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px;
+            position: relative;
+        }
+        
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block;
+            padding: 8px;
+        }
+        
+        header nav ul li a:hover {
+            color: black;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        header nav ul ul {
+            display: none;
+            position: absolute;
+            top: 40px;
+            background-color: rgb(22, 22, 22);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        
+        header nav ul li:hover > ul {
+            display: block;
+        }
+        
+        header nav ul ul li {
+            display: block;
+            margin: 0;
+        }
+        
+        header nav ul ul li a {
+            padding: 10px;
+            border-radius: 3px;
+        }
+        
+        header img {
+			height: 50px;
+		}
+
+        main {
+            padding: 20px;
+        }
+        
+        main section {
+            margin-bottom: 40px;
+        }
+        
+        main section h2 {
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        main section h3 {
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        main section p {
+            line-height: 1.5;
+        }
+        
+		.welcome-screen {
+			background-image: url('https://cutewallpaper.org/cdn-cgi/mirage/91b98c5373d6a01796e55b9f978389531ff4e5ebae85abd935c54ab8d42fdd46/1280/21/black-gif-background/Black-gif-background-3-GIF-Images-Download.gif');
+			background-size: cover;
+			height: 900px;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			text-align: center;
+			color: #fff;
+			padding: 0 20%;
+			box-sizing: border-box;
+		}
+		
+		.welcome-screen h1 {
+			margin-top: 0;
+			font-size: 4em;
+			font-weight: 700;
+			font-style: italic;
+			text-shadow: 2px 2px #000;
+            margin-bottom: 0;
+		}
+		
+		.welcome-screen p {
+			margin: 15px 0;
+			font-size: 1.5em;
+			font-weight: normal;
+			text-shadow: 2px 2px #000;
+		}
+		
+		.btn {
+            display: inline-block;
+            padding: 12px 24px;
+            border-radius: 50px;
+            background-color: transparent;
+            color: #fff;
+            font-size: 1.2em;
+            font-weight: 600;
+            text-decoration: none;
+            box-shadow: none;
+            border: 2px solid #fff;
+            transition: background-color 0.2s ease;
+        }
+        
+        .btn:hover {
+            background-color: #fff;
+            color: #000000;
+        }
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <a href="#inicio">
+			<img src="https://repo.iberopuebla.mx/imagenes/img/bigLogo/logo_fnegro_tblanco.png" alt="Logo">
+		</a>
+        <nav>
+            <ul>
+                <li><a href="#inicio">INICIO</a></li>
+                <li>
+                    <a href="#fundamentos">FUNDAMENTOS</a>
+                    <ul>
+                        <li><a href="#marco-teorico">MARCO TEÓRICO</a></li>
+                        <li><a href="#contexto-proyecto">CONTEXTO DEL PROYECTO</a></li>
+                        <li><a href="#metodologia">METODOLOGÍA</a></li>
+                        <li><a href="#prototipo">PROTOTIPO</a></li>
+                    </ul>
+                </li>
+                <li><a href="#diseno-implementacion">DISEÑO E IMPLEMENTACIÓN</a></li>
+                <li><a href="#acerca-de">ACERCA DE...</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div class="welcome-screen">
+		<h1>PORTAFOLIO DE EVIDENCIAS</h1>
+		<p>Portafilio en donde se presentan los entregables de un proyecto generado desde Fundamentos de Ingeneria de Software, Desarrollo e Implementación</p>
+		<a href="#" class="btn">Iniciemos</a>
+	</div>
+</body>
+</html>
