@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>My Website</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #ffffff;
+			color: #000;
+        }
+        
+        header {
+            background-color: rgb(0, 0, 0);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid white;
+        }
+        
+        header nav ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        
+        header nav ul li {
+            display: inline-block;
+            margin: 0 10px;
+            padding: 10px;
+            position: relative;
+        }
+        
+        header nav ul li a {
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: block;
+            padding: 8px;
+        }
+        
+        header nav ul li a:hover {
+            color: black;
+            background-color: rgb(255, 255, 255);
+        }
+        
+        header nav ul ul {
+            display: none;
+            position: absolute;
+            top: 40px;
+            background-color: rgb(22, 22, 22);
+            padding: 10px;
+            border-radius: 5px;
+            box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        }
+        
+        header nav ul li:hover > ul {
+            display: block;
+        }
+        
+        header nav ul ul li {
+            display: block;
+            margin: 0;
+        }
+        
+        header nav ul ul li a {
+            padding: 10px;
+            border-radius: 3px;
+        }
+        
+        header img {
+			height: 50px;
+		}
+
+        main {
+            padding: 20px;
+        }
+        
+        main section {
+            margin-bottom: 40px;
+        }
+        
+        main section h2 {
+            font-size: 2em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        main section h3 {
+            font-size: 1.5em;
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+        
+        main section p {
+            line-height: 1.5;
+        }
+
+        #mision {
+            background-color: #212529;
+            padding: 50px;
+            text-align: center;
+          }
+          
+          #vision {
+            background-color: #17181b;
+            padding: 50px;
+            text-align: center;
+          }
+
+          #info {
+            background-color: #0e0f11;
+            padding: 50px;
+            text-align: center;
+          }
+
+          #prototipo {
+            background-color: #060607;
+            padding: 50px;
+            text-align: center;
+          }
+
+          #navegacion {
+            background-color: #000000;
+            padding: 50px;
+            text-align: center;
+          }
+
+          table {
+            border-collapse: collapse;
+            margin: 0 auto;
+            font-family: Arial, sans-serif;
+            border: 2px solid #ddd;
+            width: 20%;
+            margin-top: 20px;
+            margin-bottom: 20px;
+            
+          }
+          
+          th, td {
+            text-align: center;
+            padding: 12px;
+          }
+          
+          th {
+          }
+          
+          tr:nth-child(even) {
+          }
+
+          
+          td:last-child {
+            font-weight: bold;
+            color: #ff2600;
+          }
+
+          .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
+          }
+          
+          .mySlides {
+            display: none;
+          }
+          
+          .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: rgb(0, 0, 0);
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+          }
+
+          .prev {
+            left: 0;
+            margin-right: 10px;
+          }
+          .next {
+            right: 0;
+            border-radius: 3px 0 0 3px;
+          }
+          
+          .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+          }
+          
+	</style>
+	<link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+</head>       
+<body class="bg-dark text-white">
+    <header>
+        <a href="#inicio">
+			<img src="https://repo.iberopuebla.mx/imagenes/img/bigLogo/logo_fnegro_tblanco.png" alt="Logo">
+		</a>
+        <nav>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li>
+                    <a href="#fundamentos">FUNDAMENTOS</a>
+                    <ul>
+                        <li><a href="marcoteorico.html">MARCO TEÓRICO</a></li>
+                        <li><a href="contexto.html">CONTEXTO DEL PROYECTO</a></li>
+                        <li><a href="#metodologia">METODOLOGÍA</a></li>
+                        <li><a href="#prototipo">PROTOTIPO</a></li>
+                    </ul>
+                </li>
+                <li><a href="#diseno-implementacion">DISEÑO E IMPLEMENTACIÓN</a></li>
+                <li><a href="#acerca-de">ACERCA DE...</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="mision">
+        <h4>Misión</h4>
+        <p>Parque Jurásico tiene como misión ofrecer una experiencia única y emocionante a
+            sus visitantes, a través de la exhibición de una amplia variedad de dinosaurios y la
+            realización de diversas actividades educativas y recreativas. Nos enfocamos en
+            familias y grupos escolares que buscan aprender sobre la historia de la vida en la
+            Tierra y el papel de los dinosaurios en ella. Nuestros clientes valoran la calidad de
+            nuestras exposiciones, el entretenimiento que ofrecemos y la posibilidad de
+            aprender de manera amena y accesible.
+            </p>
+      </section>
+      
+      <section id="vision">
+        <h4>Visión</h4>
+        <p>Parque Jurásico se ve como una empresa líder en el entretenimiento educativo que
+            proporciona experiencias inolvidables para los visitantes de todas las edades. Como
+            una empresa socialmente responsable, aspira a ser reconocida como un modelo de
+            sostenibilidad y conservación de especies en peligro de extinción. La visión de
+            Parque Jurásico es ser el parque temático de dinosaurios más exitoso y sostenible
+            del mundo, utilizando tecnologías innovadoras para crear experiencias únicas e
+            inolvidables para los visitantes.
+            </p>
+      </section>
+  
+      <section id="info">
+        <h4>Información del parque</h4>
+        <hr style="border-top: 1px solid white; margin-top: 30px; margin-bottom: 30px;">
+        <h5>Mapa del parque</h5>
+        <div style="text-align: center;">
+            <img src="https://media.discordapp.net/attachments/712750937093177404/1103484797155815454/Mapa_del_Parque_1.png?width=705&height=397">
+        </div>
+        <hr style="border-top: 1px solid white; margin-top: 30px; margin-bottom: 30px;">
+        <h5>Cantidad de Tiendas/Servicios</h5>
+        <table>
+            <thead>
+              <tr>
+                <th>Tiendas/Servicios</th>
+                <th>Número</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tiendas de souvenirs</td>
+                <td>12</td>
+              </tr>
+              <tr>
+                <td>Tiendas de comida</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Restaurantes</td>
+                <td>4</td>
+              </tr>
+              <tr>
+                <td>Zonas de picnic</td>
+                <td>6</td>
+              </tr>
+              <tr>
+                <td>Baños</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Puntos de información</td>
+                <td>2</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr style="border-top: 1px solid white; margin-top: 30px; margin-bottom: 30px;">
+          <h5>Cantidad de Dinosaurios</h5>
+          <table>
+            <thead>
+              <tr>
+                <th>Tipo de dinosaurio</th>
+                <th>Cantidad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>T-Rex</td>
+                <td>10</td>
+              </tr>
+              <tr>
+                <td>Velociraptor</td>
+                <td>20</td>
+              </tr>
+              <tr>
+                <td>Triceratops</td>
+                <td>15</td>
+              </tr>
+              <tr>
+                <td>Stegosaurus</td>
+                <td>8</td>
+              </tr>
+              <tr>
+                <td>Total</td>
+                <td>53</td>
+              </tr>
+            </tbody>
+          </table>
+          <hr style="border-top: 1px solid white; margin-top: 30px; margin-bottom: 30px;">
+          <h5>Cantidad de visitantes en el parque</h5>
+          <table>
+            <thead>
+              <tr>
+                <th colspan="2">Número de Visitantes en un día</th>
+              </tr>
+              <tr>
+                <th>Categoría</th>
+                <th>Cantidad</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Adultos</td>
+                <td>18,000</td>
+              </tr>
+              <tr>
+                <td>Niños</td>
+                <td>7,500</td>
+              </tr>
+              <tr>
+                <td>Adolescentes</td>
+                <td>4,500</td>
+              </tr>
+              <tr>
+                <td><b>Total</b></td>
+                <td><b> 30,000</b></td>
+              </tr>
+            </tbody>
+          </table>
+      </section>
+      <section id="prototipo">
+        <h4>Prototipo</h4>
+        <hr style="border-top: 1px solid white; margin-top: 30px; margin-bottom: 30px;">
+        <h5>CU_01</h5>
+        <div class="slideshow-container">
+            <img class="mySlides1" src="https://media.discordapp.net/attachments/798195318910877740/1103498723885060199/Portada_CU_01.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides1" src="https://media.discordapp.net/attachments/798195318910877740/1103498724195454976/PA_01_01_Menu_de_Gestion_de_Autenticacion.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides1" src="https://media.discordapp.net/attachments/798195318910877740/1103498724765876275/PA_01_02_Menu_de_Autenticacion.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides1" src="https://media.discordapp.net/attachments/798195318910877740/1103498725030105140/PA_01_03_Autenticacion_del_Administrador.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides1" src="https://media.discordapp.net/attachments/798195318910877740/1103498725327917097/PA_01_04_Autenticacion_del_Gerente_General.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides1" src="https://media.discordapp.net/attachments/798195318910877740/1103498725655056534/PA_01_05_Autenticacion_del_Auxiliar_de_Ventas.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides1" src="https://media.discordapp.net/attachments/798195318910877740/1103498725936091146/PA_01_06_Autenticacion_del_Cajero.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides1" src="https://media.discordapp.net/attachments/798195318910877740/1103498726267437236/PA_01_07_Gerente_de_Compras.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides1" src="https://media.discordapp.net/attachments/798195318910877740/1103498726619746427/PA_01_08_Gerente_de_Almacen.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides1" src="https://media.discordapp.net/attachments/798195318910877740/1103498726917554268/PA_01_09_Auxiliar_de_Almacen.png?width=1191&height=670" style="width:100%">
+            <a class="prev" onclick="plusSlides(-1, 'mySlides1')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'mySlides1')">&#10095;</a>
+          </div>
+        <hr style="border-top: 1px solid white; margin-top: 30px; margin-bottom: 30px;">
+        <h5>CU_02</h5>
+        <div class="slideshow-container">
+            <img class="mySlides2" src="https://media.discordapp.net/attachments/798195318910877740/1103511462493818931/CU_02.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides2" src="https://media.discordapp.net/attachments/798195318910877740/1103511462804201502/PA_02_01_Menu_de_Productos.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides2" src="https://media.discordapp.net/attachments/798195318910877740/1103511459947876382/PA_02_02_MENU_CONSULTA_DE_PRODUCTO.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides2" src="https://media.discordapp.net/attachments/798195318910877740/1103511460321173595/PA_02_03_Consulta_de_Producto.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides2" src="https://media.discordapp.net/attachments/798195318910877740/1103511460602196068/PA_02_04_Alta_de_Producto.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides2" src="https://media.discordapp.net/attachments/798195318910877740/1103511460899987606/PA_02_05_Menu_Actualizacion_de_producto.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides2" src="https://media.discordapp.net/attachments/798195318910877740/1103511461139066930/PA_02_06_ACTUALIZACION_DEL_PRODUCTO.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides2" src="https://media.discordapp.net/attachments/798195318910877740/1103511461705289738/PA_02_07_MENU_BAJA_DE_PRODUCTO.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides2" src="https://media.discordapp.net/attachments/798195318910877740/1103511461982117988/PA_02_08_BAJA_DE_PRODUCTO.png?width=1191&height=670" style="width:100%">
+            <img class="mySlides2" src="https://media.discordapp.net/attachments/798195318910877740/1103511462217003019/PA_02_09_CONFIRMACION_BAJA_DE_PRODUCTO.png?width=1191&height=670" style="width:100%">
+            <a class="prev" onclick="plusSlides(-1, 'mySlides2')">&#10094;</a>
+            <a class="next" onclick="plusSlides(1, 'mySlides2')">&#10095;</a>
+          </div>
+          <hr style="border-top: 1px solid white; margin-top: 30px; margin-bottom: 30px;">
+          <h5>CU_03</h5>
+          <div class="slideshow-container">
+              <img class="mySlides3" src="https://media.discordapp.net/attachments/798195318910877740/1103512584763736144/21.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides3" src="https://media.discordapp.net/attachments/798195318910877740/1103512595752820736/PA_03_01_MENU_REGION_Y_ZONA.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides3" src="https://media.discordapp.net/attachments/798195318910877740/1103512602816032768/PA_03_02_MENU_CONSULTA_REGION_Y_ZONA.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides3" src="https://media.discordapp.net/attachments/798195318910877740/1103512613347917835/PA_03_03_Consulta_Region_y_Zona.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides3" src="https://media.discordapp.net/attachments/798195318910877740/1103512622856417291/PA_03_04_Alta_region_y_zona.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides3" src="https://media.discordapp.net/attachments/798195318910877740/1103512632926929006/PA_03_05_MENU_ACTUALIZAR_REGION_Y_ZONA.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides3" src="https://media.discordapp.net/attachments/798195318910877740/1103512642066325614/PA_03_06_ACTUALIZAR_REGION_Y_ZONA.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides3" src="https://media.discordapp.net/attachments/798195318910877740/1103512650320715817/PA_03_07_MENU_BAJA_REGION_Y_ZONA.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides3" src="https://media.discordapp.net/attachments/798195318910877740/1103512658126323752/PA_03_08_BAJA_REGION_Y_ZONA.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides3" src="https://media.discordapp.net/attachments/798195318910877740/1103512664501661746/PA_03_09_CONFIRMACION_BAJA_REGION_Y_ZONA.png?width=1191&height=670" style="width:100%">
+              <a class="prev" onclick="plusSlides(-1, 'mySlides3')">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 'mySlides3')">&#10095;</a>
+            </div>
+            <hr style="border-top: 1px solid white; margin-top: 30px; margin-bottom: 30px;">
+          <h5>CU_04</h5>
+          <div class="slideshow-container">
+              <img class="mySlides4" src="https://media.discordapp.net/attachments/798195318910877740/1103513677698715648/31.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides4" src="https://media.discordapp.net/attachments/798195318910877740/1103513677954551859/PA_04_01_MENU_USUARIO.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides4" src="https://media.discordapp.net/attachments/798195318910877740/1103513678394957884/PA_04_02_MENU_CONSULTA_USUARIO.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides4" src="https://media.discordapp.net/attachments/798195318910877740/1103513678730498100/PA_04_03_CONSULTA_USUARIO.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides4" src="https://media.discordapp.net/attachments/798195318910877740/1103513678956994680/PA_04_04_ALTA_USUARIO.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides4" src="https://media.discordapp.net/attachments/798195318910877740/1103513679187693668/PA_04_05_MENU_ACTUALIZAR_USUARIO.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides4" src="https://media.discordapp.net/attachments/798195318910877740/1103513679485472818/PA_04_06_ACTUALIZAR_USUARIO.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides4" src="https://media.discordapp.net/attachments/798195318910877740/1103513679728746697/PA_04_07_MENU_BAJAR_USUARIO.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides4" src="https://media.discordapp.net/attachments/798195318910877740/1103513679963639879/PA_04_08_BAJAR_USUARIO.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides4" src="https://media.discordapp.net/attachments/798195318910877740/1103513680227864609/PA_04_09_CONFIRMACION_BAJAR_USUARIO.png?width=1191&height=670" style="width:100%">
+              <a class="prev" onclick="plusSlides(-1, 'mySlides4')">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 'mySlides4')">&#10095;</a>
+            </div>
+            <hr style="border-top: 1px solid white; margin-top: 30px; margin-bottom: 30px;">
+          <h5>CU_06</h5>
+          <div class="slideshow-container">
+              <img class="mySlides5" src="https://media.discordapp.net/attachments/798195318910877740/1103515096682082345/41.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides5" src="https://media.discordapp.net/attachments/798195318910877740/1103515097403502633/PA_06_01_MENU_DE_COMPRA_DE_PRODUCTOS.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides5" src="https://media.discordapp.net/attachments/798195318910877740/1103515097973932142/PA_06_02_COMPRA_DE_PRODUCTO.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides5" src="https://media.discordapp.net/attachments/798195318910877740/1103515098347221063/PA_06_03_PAGO_DE_PRODUCTO.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides5" src="https://media.discordapp.net/attachments/798195318910877740/1103515096182956124/PA_06_04_Metodo_de_pago.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides5" src="https://media.discordapp.net/attachments/798195318910877740/1103515097026011136/FO_01_Recepcion_de_inventario.png?width=1191&height=670" style="width:100%">
+              <a class="prev" onclick="plusSlides(-1, 'mySlides5')">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 'mySlides5')">&#10095;</a>
+            </div>
+            <hr style="border-top: 1px solid white; margin-top: 30px; margin-bottom: 30px;">
+            <h5>CU_07</h5>
+          <div class="slideshow-container">
+              <img class="mySlides6" src="https://media.discordapp.net/attachments/798195318910877740/1103515968031948810/47.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides6" src="https://media.discordapp.net/attachments/798195318910877740/1103515968354930719/PA_07_01_MENU_DE_VENTA_DE_PRODUCTOS.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides6" src="https://media.discordapp.net/attachments/798195318910877740/1103515968996646942/PA_07_02_MENU_DE_CAJAS.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides6" src="https://media.discordapp.net/attachments/798195318910877740/1103515969210548354/PA_07_03_APERTURA_DE_CAJA.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides6" src="https://media.discordapp.net/attachments/798195318910877740/1103515969504170035/PA_07_04_CIERRE_DE_CAJA.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides6" src="https://media.discordapp.net/attachments/798195318910877740/1103515969810341898/PA_07_05_VENTA_DE_PRODUCTOS.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides6" src="https://media.discordapp.net/attachments/798195318910877740/1103515970082963507/PA_07_06_MENU_METODO_DE_PAGO.png?width=1191&height=670" style="width:100%">
+              <img class="mySlides6" src="https://media.discordapp.net/attachments/798195318910877740/1103515970393362493/PA_07_07_CREACION_DE_TICKET_DE_COMPRA.png?width=1191&height=670" style="width:100%">
+              <a class="prev" onclick="plusSlides(-1, 'mySlides6')">&#10094;</a>
+              <a class="next" onclick="plusSlides(1, 'mySlides6')">&#10095;</a>
+            </div>
+      </section>
+      <section id="navegacion">
+        <h4>Mapa de navegación de administrador</h4>
+        <div style="text-align: center;">
+            <img src="https://media.discordapp.net/attachments/712750937093177404/1103520345861931140/image.png?width=1235&height=486">
+        </div>
+      </section>
+      <script src = "hola.js"> </script>
+</body>
+</html>
