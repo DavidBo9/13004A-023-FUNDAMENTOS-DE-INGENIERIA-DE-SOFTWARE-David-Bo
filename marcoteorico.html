@@ -134,15 +134,39 @@
 			margin: 5px 0;
 		}
 
-        .video-container {
-            display: flex;
-            justify-content: center;
+        .slideshow-container {
+            max-width: 1000px;
+            position: relative;
+            margin: auto;
         }
 
-        .video-container iframe {
-            margin: 0 auto;
+        .mySlides {
+            display: none;
         }
 
+        .prev, .next {
+            cursor: pointer;
+            position: absolute;
+            top: 50%;
+            width: auto;
+            padding: 16px;
+            margin-top: -22px;
+            color: white;
+            font-weight: bold;
+            font-size: 18px;
+            transition: 0.6s ease;
+            border-radius: 0 3px 3px 0;
+            user-select: none;
+        }
+
+        .next {
+            right: 0;
+            margin-left: 10px;
+        }
+
+        .prev:hover, .next:hover {
+            background-color: rgba(0, 0, 0, 0.8);
+        }
         
 
 	</style>
@@ -187,13 +211,18 @@
                     <img src="https://cdn.discordapp.com/attachments/712750937093177404/1103473561282281494/David_Bojalil_Abiti_Infografia_Ing._de_SW_moderna_1.png">
                 </div>
                 <h2>Importancia de la ingeniería de Software</h2>
-                <div class="video-container">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/R3NzTt0BTWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-                  </div>
+                <iframe width="560" height="315" src="https://www.youtube.com/embed/R3NzTt0BTWE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
                 <h2>4+1 Vistas</h2>
-                <div style="text-align: center;">
-                    <img src="https://media.discordapp.net/attachments/798195318910877740/1105518571594989598/Screenshot_2023-05-09_at_9.35.46.png?width=2028&height=1158">
-                </div>
+                <div class="slideshow-container">
+                    <img class="mySlides" src="https://media.discordapp.net/attachments/798195318910877740/1105527711214096485/Diapositiva1.PNG?width=2028&height=1140" style="width:100%">
+                    <img class="mySlides" src="https://media.discordapp.net/attachments/798195318910877740/1105527711709016175/Diapositiva2.PNG?width=2028&height=1140" style="width:100%">
+                    <img class="mySlides" src="https://media.discordapp.net/attachments/798195318910877740/1105527712124244069/Diapositiva3.PNG?width=2028&height=1140" style="width:100%">
+                    <img class="mySlides" src="https://media.discordapp.net/attachments/798195318910877740/1105527712434630786/Diapositiva4.PNG?width=2028&height=1140" style="width:100%">
+                    <img class="mySlides" src="https://media.discordapp.net/attachments/798195318910877740/1105527712732418089/Diapositiva5.PNG?width=2028&height=1140" style="width:100%">
+                    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+                    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+                  </div>
+            <script src = "minecraft.js"> </script>
             </section>
             <section class="infographic">
 </body>
